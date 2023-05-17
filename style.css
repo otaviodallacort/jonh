@@ -1,0 +1,37 @@
+footer{
+    background-color: red;
+}
+header{
+    background-color: red;
+    
+}
+body{
+    background-color: black;
+}
+h1{
+    color: yellow;
+    text-align: center;
+}
+p{
+    color: white;
+    text-align: center;
+}
+figcaption{
+    color: white;
+    text-align: center;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+footer img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

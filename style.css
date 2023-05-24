@@ -1,12 +1,42 @@
 footer{
     background-color: red;
+    border-radius: 20px;
 }
 header{
     background-color: red;
+    border-radius: 20px;
     
 }
 body{
     background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "cc cc cc"
+    "bb oo oo"
+    "pp pp pp";
+    grid-gap: 20px;
+    grid-template-columns: auto auto 30%;
+    margin: 0;
+    
+
+}
+.fundo{
+    background: linear-gradient(45deg,#950101, black, #950101);
+    animation: colors 15s ease infinite;
+    background-size: 300% 300% ;
+}
+.cabeca{
+    grid-area: cc;
+
+}
+.corpo{
+    grid-area: oo;
+}
+.perna{
+    grid-area: pp;
+}
+.braco{
+    grid-area: bb;
 }
 h1{
     color: yellow;
@@ -34,4 +64,15 @@ img {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }

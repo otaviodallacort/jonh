@@ -1,21 +1,10 @@
-footer{
-    background-color: red;
-    border-radius: 20px;
-    
-}
-
-header{
-    background-color: red;
-    border-radius: 20px;
-    font-style: italic;
-		font-weight: bold;
-		font-size: 25px;
-		font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
-
-body{
+/* Parte visual do body */
+body {
     background-color: black;
+}
+
+/* Estrutura do grid */
+body{
     display: grid;
     grid-template-areas: 
     "cc cc cc"
@@ -28,65 +17,11 @@ body{
 
 }
 
+/* Fundo animado com várias cores */
 .fundo{
     background: linear-gradient(45deg,#950101, black, #950101, #FA7D09,#950101, black);
     animation: colors 10s ease infinite;
     background-size: 300% 300% ;
-}
-
-.cabeca{
-    grid-area: cc;
-
-}
-
-.corpo{
-    grid-area: oo;
-}
-
-.perna{
-    grid-area: pp;
-    color: yellow;
-}
-
-.braco{
-    grid-area: bb;
-}
-
-h1{
-    color: yellow;
-    text-align: center;
-}
-
-h3{
-    color: white;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-figcaption{
-    color: white;
-    text-align: center;
-}
-
-header img{
-    width: 100px;
-    height: 100px;
-    margin: 0;
-}
-
-footer img{
-    width: 100px;
-    height: 100px;
-    margin: 0;
-}
-
-img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    
-    
 }
 
 @keyframes colors{
@@ -100,15 +35,123 @@ img {
         background-position: 0% 50%;
     }
 }
+
+/* Header */
+.cabeca{
+    grid-area: cc;
+
+}
+
+/* Main*/
+.corpo{
+    grid-area: oo;
+}
+
+/* Footer */
+.perna{
+    grid-area: pp;
+    color: yellow;
+}
+
+/* Aside */
+.braco{
+    grid-area: bb;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Parte visual do footer */
+footer{
+    background-color: red;
+    border-radius: 20px;
+   
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Parte visual do header */
+header{
+    background-color: red;
+    border-radius: 20px;
+    font-style: italic;
+		font-weight: bold;
+		font-size: 25px;
+		font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Parte visual do título que está no header */
+h1{
+    color: yellow;@keyframes colors{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Parte visual da sinopse */
+h3{
+    color: white;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Parte visual do figcapition */
+figcaption {
+    color: white;
+}
+
+/* Estrutura do figcaption */
+figcaption{
+    text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Modificações da pipoca que está no header */
+header img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Modificações da pipoca que está no footer */
+footer img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estrutura da imagem */
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 h2{
     text-align: center;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Tudo que está no main ficarão centralizados */
 main{
     text-align: center;
 }
 
-/* Styling the button */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Parte visual do botão */
 .btn {
     cursor: pointer;
     border: 1px solid #3498db;
@@ -119,7 +162,17 @@ main{
     font-size: 1.5em;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Parte visual do poster */
 .poster{
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Estrutura do vídeo */
+video{
+    width: 700px;
+    height: 500px;
 }
